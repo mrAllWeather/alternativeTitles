@@ -186,7 +186,7 @@ Character;Meaning
 ∛;cubed root
 ∜;fourth root
 ∝;is proportional to
-∞;infinity
+∞;-infinity
 ∧;and
 ∨;or
 ∩;intersection
@@ -274,3 +274,4 @@ V̇;V'
 ¡;!
 º;o
 ;Upsilon
+ɛ;Epsilon
