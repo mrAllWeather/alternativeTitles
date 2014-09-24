@@ -13,6 +13,7 @@ $(document).ready(function() {
 				console.log(match);
 				for(var i = 0; i < match.length; i++) {
 					if (!XRegExp.test(match[i], Notletters)) {
+						match[i] = match[i].replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 						var re = new RegExp(match[i], 'g');
 						noLines = noLines.replace(re, ", ");
 					}
