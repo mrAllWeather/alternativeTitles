@@ -27,3 +27,16 @@ function showDiv(element) {
   }
 }
 
+function clearElement(element) {
+  if (document.getElementById) { // DOM3 = IE5, NS6
+    document.getElementById(element).value = '';
+  }
+  else {
+    if (document.layers) { // Netscape 4
+      document.element.value = '';
+    }
+    else { // IE 4
+      document.all.element.value = '';
+    }
+  }
+}

@@ -7,7 +7,7 @@
 		
 		<!--Script to hide each div-->
 		<script type="text/javascript" src="js/DivHide.js"></script>
-		
+				
 		<!--Code behind each tool. Indent represents relation to higher script-->
 		<script type="text/javascript" src="js/LinkFixer.js"></script>
 		<script type="text/javascript" src="js/SoResponsibility.js"></script>
@@ -17,26 +17,22 @@
 	</head>
 		<body>
 			<div id="LinkFixer_Description">
-				<b>Equella Hyperlink</b>
-				<p>Cleaner (remove spaces) and Proxy adder for Equella links</p>
+				<b><span title="Cleaner (remove spaces) and Proxy adder for Equella links">Equella Hyperlink<span></b>
 				<a href="javascript:showDiv('LinkFixer')">Show</a> / <a href="javascript:hideDiv('LinkFixer')">Hide</a>
 				<div id="LinkFixer" style="display:none">
-					<p><b>Clean:</b> <input id="CleanInput" value="" type="text"></p>
+					<p><b>Clean:</b> <input id="CleanInput" value="" type="text"><button type="button" onclick="javascript:clearElement('CleanInput');">Clear</button></p>
 					<p id="CleanLink">Hyperlink: </p>
-					<p><b>Proxy:</b> <input id="ProxyInput" value="" type="text"></p>
+					<p><b>Proxy:</b> <input id="ProxyInput" value="" type="text"><button type="button" onclick="javascript:clearElement('ProxyInput');">Clear</button></p>
 					<p id="ProxyLink">Hyperlink: </p>
 				</div>
 			</div>
+			</br>
 			<div id="StatementofResponsibility_Description">
-				<br><b>Statement of Responsibility Cleaner</b>
-				<p>Removes new lines, multiple spaces, non-alpha|comma|fullstop characters, and multiple commas (Supports Diacritics)</p>
+				<b><span title="Removes new lines, multiple spaces, non-alpha|comma|fullstop characters, and multiple commas (Supports Diacritics)">Statement of Responsibility Cleaner</span></b>
 				<a href="javascript:showDiv('StatementofResponsibility')">Show</a> / <a href="javascript:hideDiv('StatementofResponsibility')">Hide</a>
 				<div id="StatementofResponsibility" style="display:none">
-						<p></p>
+						<p><button type="button" onclick="javascript:clearElement('SORInput');">Clear</button></p>
 						<table width="100%">
-							<colgroup>
-								<col>
-							</colgroup>
 							<tbody>
 								<tr>
 									<td height="100%" width="50%">
@@ -50,15 +46,13 @@
 						</table>
 				</div>
 			</div>
+			<br>
 			<div id="SpaceRemover_Description">
-				<br><b>Space and Newline Remover</b>
-				<p>Removes new lines, multiple spaces. Does not affect text</p>
+				<b><span title="Removes new lines, multiple spaces. Does not affect text">Space and Newline Remover</span></b>
 				<a href="javascript:showDiv('SpaceRemover')">Show</a> / <a href="javascript:hideDiv('SpaceRemover')">Hide</a>
 				<div id="SpaceRemover" style="display:none">
+					<p><button type="button" onclick="javascript:clearElement('SRInput');">Clear</button></p>
 					<table width="100%">
-						<colgroup>
-							<col>
-						</colgroup>
 						<tbody>
 							<tr>
 								<td height="100%" width="50%">
@@ -72,16 +66,14 @@
 					</table>
 				</div>
 			</div>
+			<br>
 			<div id="Transliteration_Description">
-				<br><b>Transliteration Tool</b>
-				<p>Paste Title containing non-keyboard (ASCII) character into the left box. You may need to enter a space at the end of the title.</p>
+				<b><span title="Paste Title containing non-keyboard (ASCII) character into the left box. You may need to enter a space at the end of the title.">Transliteration Tool</span></b>
 				<a href="javascript:showDiv('Transliteration')">Show</a> / <a href="javascript:hideDiv('Transliteration')">Hide</a>
 				<div id="Transliteration" style="display:none">
+				<p><button type="button" onclick="javascript:clearElement('TRANSInput');">Clear</button></p>
 					<div>
 						<table>
-							<colgroup>
-								<col>
-							</colgroup>
 							<tbody>
 								<tr>
 									<td height="100%" width="1500px">
@@ -93,7 +85,7 @@
 								</tr>
 							</tbody>
 						</table>
-				</div>
+					</div>
 				<b><p id="changed"></p></b>
 				<p>Elements</p>
 				<div id="elements">

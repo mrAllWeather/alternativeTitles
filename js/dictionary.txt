@@ -194,8 +194,8 @@ Character;Meaning
 ∫;integral
 ≠;not equal to
 ≡;triple bar
-≤;</-
-≥;>/-
+≤;</=
+≥;>/=
 ™;(TM)
 ©;(c)
 ®;(R)
